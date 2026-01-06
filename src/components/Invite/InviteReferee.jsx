@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Check, Copy, Link2 } from "lucide-react";
 
 export default function InviteReferee({ roomId }) {
-  const link = `${window.location.origin}/referee/${roomId}`;
+  const link = `https://aesthetic-taiyaki-bf68db.netlify.app/referee/${roomId}`;
   const [copied, setCopied] = useState(false);
 
   const copyToClipboard = async () => {
