@@ -68,7 +68,7 @@ export default function Login() {
 
       {/* FOOTER */}
       <p className="absolute bottom-6 text-xs text-gray-500">
-        © {new Date().getFullYear()} HR Verification Platform
+        © {new Date().getFullYear()} HR Verification Platform BY ASHU
       </p>
     </div>
   );
