@@ -12,12 +12,12 @@ export default function VerifyForm({ onClose }) {
             name="background-verification"
             method="POST"
             data-netlify="true"
-            onSubmit={(e) => {
-              e.preventDefault();
-              setSubmitted(true);
-            }}
+            netlify-honeypot="bot-field"
+            onSubmit={() => setSubmitted(true)}
           >
+            {/* 🔑 REQUIRED FOR NETLIFY */}
             <input type="hidden" name="form-name" value="background-verification" />
+            <input type="hidden" name="bot-field" />
 
             <h2 className="text-xl font-semibold mb-4">
               Background Verification
