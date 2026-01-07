@@ -1,14 +1,16 @@
 export default function Navbar({ onVerifyClick }) {
   return (
-    <nav className="fixed top-0 w-full flex justify-between items-center px-8 py-4 bg-black text-white z-50">
-      <h1 className="font-semibold text-lg">HR Verification</h1>
+    <div className="flex justify-between items-center px-6 py-4 border-b border-white/10 bg-black/40">
+      <h1 className="text-lg font-semibold text-white">
+        HR Verification
+      </h1>
 
       <button
         onClick={onVerifyClick}
-        className="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded"
+        className="bg-blue-600 hover:bg-blue-700 px-5 py-2 rounded-lg transition text-white"
       >
         Verify Me
       </button>
-    </nav>
+    </div>
   );
 }

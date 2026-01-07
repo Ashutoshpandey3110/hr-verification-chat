@@ -5,3 +5,11 @@
 body {
   @apply bg-gray-100 text-gray-900;
 }
+.input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+
